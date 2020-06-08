@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Welcome! {% endblock %} </title>
+
+</head>
+<body>
+<h2>{{ namepro }}</h2>
+
+{% for article in Articles  %}
+
+<h4>{{ article.title }}</h4>
+<p>{{ article.content }}</p>
+
+{% endfor %}
+
+
+</body>
+</html>
